@@ -1,18 +1,10 @@
 import streamlit as st
-import nltk
-
-# Download NLTK resources saat app mulai
-nltk.download('punkt')
-nltk.download('stopwords')
-
-# import modul lain setelah download selesai
 import pandas as pd
 import matplotlib.pyplot as plt
 from wordcloud import WordCloud
 
 from preprocessing import preprocess_text
 from model_utils import load_models
-
 
 st.set_page_config(page_title="Analisis Tokopedia", layout="wide")
 st.title("📊 Analisis Topik & Sentimen Tokopedia")
