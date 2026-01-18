@@ -1,7 +1,7 @@
+import os
 import nltk
 
-nltk.download('punkt')
-nltk.download('stopwords')
+nltk.data.path.append(os.path.join(os.getcwd(), "nltk_data"))
 
 import streamlit as st
 import pandas as pd
